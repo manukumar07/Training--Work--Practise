@@ -34,3 +34,53 @@
 
 
 
+// let a="manu";
+// console.log(a.trim());
+
+// let a="manu";
+// console.log(a.trimStart());    
+
+// let a="manu kumar pal";
+// console.log(a.trimEnd());       
+
+// let a="manu";
+// let b="kumar";
+
+// let c=a[0].charAt(4);
+// let d=b[0].charAt(5);
+
+// console.log(c);
+// console.log(d);
+
+
+// let a="6";
+// console.log(a.padStart(5,"0"));
+
+
+// let a="8";
+// console.log(a.padEnd(4,"1"));
+
+
+// let a="hello";
+// console.log(a[3]);
+
+
+// let a="Hello";
+// console.log(a.match("Hello"));
+
+// let a= "hello";
+// console.log(a.includes("hey"));
+
+// console.log(a.includes("hello"));
+
+
+// let a="hello manu hey how are you ";
+// let b=a.indexOf('heey');
+// console.log(b);
+
+// let a="hello";
+// console.log(a.search("hello"));
+
+
+
+
