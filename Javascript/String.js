@@ -84,3 +84,10 @@
 
 
 
+// let a="hello  hey hello";
+// console.log(a.lastIndexOf("hello",6));
+
+// let a="Manu";
+// let b=`hello ${a}`;
+// console.log(b);
+
