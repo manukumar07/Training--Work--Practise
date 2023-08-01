@@ -27,8 +27,9 @@
 // }
 // addnumber();
 
-add = () =>
-{
-    return "hello"
-}
-console.log(add);
+// add = () =>
+// {
+//     return "hello"
+// }
+// console.log(add);
+
