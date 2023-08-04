@@ -4,4 +4,4 @@ let details=
     lastname:"kumar",
     age:"24"
 };
-details.firstname;
+details.firstname;\

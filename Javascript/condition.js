@@ -27,32 +27,29 @@
 // let day;
 
 // switch(new Date().getDay()){
-//     case 1:
+//     case 0:
 //         day="sunday";
 //         break;
-//     case 2:
+//     case 1:
 //         day="monday";
 //         break;
-//     case 3:
+//     case 2:
 //         day="tuesday";
 //         break;
-//     case 4:
+//     case 3:
 //         day="wednesday";
 //         break;
-//     case 5:
+//     case 4:
 //         day="Thrusday";
 //         break;
-//     case 6:
+//     case 5:
 //         day="friday";
 //         break;
-//     case 7:
+//     case 6:
 //         day="saturday";
 //         break;
 //     default:
-//         console.log("invalid option");  
-        
-    
-
+//         console.log("invalid option"); 
 // }
 // console.log(day);
 
