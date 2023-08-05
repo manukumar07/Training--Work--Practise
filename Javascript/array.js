@@ -31,5 +31,9 @@
 // let arr=[1,2,4,4,7,6];
 // console.log(arr.lastIndexOf());
 
-let arr=[1,2,4,4,7,6];
-console.log(arr.length(n-1));
+// let arr=[1,2,4,4,7,6];
+// console.log(arr.length(n-1));
+
+let arr=[23,43,54,65,36,37];
+arr.map(Math.sqrt);
+console.log(arr);
