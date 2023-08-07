@@ -9,7 +9,6 @@ const Header = () => {
         <div className="navbar">
           <div className="logo">Navbar..</div>
            <ul className="nav-links">
-
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
               <Link to="/contact">Contact-us</Link>
