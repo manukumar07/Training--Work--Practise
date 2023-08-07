@@ -1,0 +1,22 @@
+.form{
+    display: flex;
+    flex-direction:column;
+}
+.lb{
+    font-weight:700;
+}
+.form input{
+    width:500px;
+    height:auto;
+    margin-left:600px;
+}
+.submit
+{
+    height:50px;
+    width:200px;
+   margin-left:750px;
+   margin-top:1rem;
+   border-radius:25px;
+   color:black;
+   font-weight:600;
+}
