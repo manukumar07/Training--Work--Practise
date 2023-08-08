@@ -23,3 +23,8 @@
     color: #fff;
     text-decoration: none;
   }
+  .log{
+    border-radius:25px;
+    height:60px;
+    width:60px;
+  }

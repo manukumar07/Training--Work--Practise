@@ -5,9 +5,8 @@ import "./Header.css"
 const Header = () => {
   return (
     <>
-    (
         <div className="navbar">
-          <div className="logo">Navbar..</div>
+        <img src='images/download.png' alt='logo' className='log'></img>
            <ul className="nav-links">
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>

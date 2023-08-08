@@ -1,63 +1,67 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import "./Home.css";
 const Home = () => {
-  
-  const[inputValue,setChangeValue]=useState({
-    name:"",
-    email:"",
-    password:"",
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  });
+  const handleChange = (event) => {
+    setName(event.target.value);
+    setEmail(event.target.value);
+    setPassword(event.target.value);
 
-  const handleChange=(e) =>{
-    setChangeValue({
-      [e.target.name]: e.target.value
-  })
-};
-const handleSubmit =(e)=>{
-  e.preventDefault();
-  console.log(inputValue);
-};
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('name:', name);
+    console.log('email:', email);
+    console.log('Password:', password);
+  };
   return (
     <>
-    <form onSubmit={handleSubmit}>
-
-        <div className='form'>
-      
-        <label className='lb'>Enter Your Name</label>
-        <input type='text'
-         name='name'
-         value={inputValue}
-         autoComplete='off' 
-         onChange={handleChange}
-         placeholder='Enter your Name:- value='
+      <div className="form">
+        <h2>Form</h2>
+        <form onSubmit={handleSubmit}>
+          <label className="lb">Enter Your Name</label>
+          <input
+            type="text"
+            name="name"
+            className="form-input"
+            value={name}
+            autoComplete="off"
+            onChange={handleChange}
+            placeholder="Enter your Name:- value="
+            required
           />
-        <label className='lb'>Enter your Email:</label>
-         <input type='email'
-         name='email'
-          value={inputValue}
-          autoComplete='off'
-          placeholder='Enter your email:-'
-          onChange={handleChange}
-           />
-         <label className='lb'>Enter your Password:</label>
-         <input type='password' 
-         name='password'
-          value={inputValue}
-          autoComplete='off'
-          placeholder='Enter your password:-'
-          onChange={handleChange}
-           />
-         <button type="submit" className='submit'>Submit!</button>
-     
-        </div>
-    </form>
+          <label className="lb">Enter your Email:</label>
+          <input
+            type="email"
+            name="email"
+            className="form-input"
+            value={email}
+            autoComplete="off"
+            placeholder="Enter your email:-"
+            onChange={handleChange}
+            required
+          />
+          <label className="lb">Enter your Password:</label>
+          <input
+            type="password"
+            name="password"
+            className="form-input"
+            value={password}
+            autoComplete="off"
+            placeholder="Enter your password:-"
+            onChange={handleChange}
+            required
+          />
+          <button type="submit" className="submit">
+            Submit!
+          </button>
+        </form>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
-
-
-
-
+export default Home;
