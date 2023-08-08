@@ -72,3 +72,10 @@ const Home = () => {
 };
 
 export default Home;
+
+
+// useEffect(()=>{
+
+// },[]) // callback function 
+// it uses for re-rendering
+
