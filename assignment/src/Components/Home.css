@@ -24,6 +24,7 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top:3rem;
+    box-shadow: 10px 10px 5px 0px rgba(191,159,191,1);
   }
   
   .form h2 {
@@ -34,6 +35,9 @@
   .form-input {
     margin-bottom: 15px;
     width:400px;
+    border-bottom:2px solid black;
+    /* border:none; */
+    /* border-radius:25px; */
   }
   
   .form-group label {
@@ -44,8 +48,6 @@
   .form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
   
   /* button {
@@ -60,4 +62,10 @@
   
   /* button:hover {
     background-color: #0056b3;
-  } */
+  }*/
+
+    i:hover {
+      color: #00fcb6;
+      cursor: pointer;
+    }
+    

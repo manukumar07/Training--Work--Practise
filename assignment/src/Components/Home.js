@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 import "./Home.css";
+import { useNavigate} from "react-router-dom";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+const eye = <FontAwesomeIcon icon={faEye} />;
+
 const Home = () => {
   // const [name, setName] = useState('');
   // const [email, setEmail] = useState('');
   // const [password, setPassword] = useState('');
+
   const [state, setState] = useState({
     name:"",
     email: "",
     password: ""
   });
+  const [passwordShown, setPasswordShown] = useState(false);
+
+  const togglePasswordVisiblity = () => {
+    setPasswordShown(passwordShown ? false : true);
+  };
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -23,9 +35,25 @@ const Home = () => {
     // console.log('email:', email);
     // console.log('Password:', password);
     console.log(state);
-  };
+  }; 
+  // const Navigate =useNavigate();
+  // const handleClick =() =>{
+  //   Navigate(-1);
+  //   state:{
+  //   }
+  // }
+  const navigate = useNavigate();
+
+    const handleNavigation = () => {
+        const propsToPass = {
+            name:"",
+            email:"",
+            password:""
+        };
+        navigate('/about', { state: propsToPass });
+    };
   return (
-    <>
+    
       <div className="form">
         <h2>Form</h2>
         <form onSubmit={handleSubmit}>
@@ -53,29 +81,22 @@ const Home = () => {
           />
           <label className="lb">Enter your Password:-</label>
           <input
-            type="password"
+            type={passwordShown ? "password" : "text"}
             name="password"
             className="form-input"
             value={state.password}
             autoComplete="off"
             placeholder="Enter your password:-"
             onChange={handleChange}
-            required
-          />
-          <button type="submit" className="submit">
-            Submit!
-          </button>
-        </form>
-      </div>
-    </>
-  );
-};
+            onClick={togglePasswordVisiblity} /> {eye}{""}
+          <button type="submit" className="submit">Submit</button>
+          <button onClick={handleNavigation}>Go to about page</button>
+       </form>
+       </div>
+  )
+}
 
 export default Home;
 
 
-// useEffect(()=>{
-
-// },[]) // callback function 
-// it uses for re-rendering
 
