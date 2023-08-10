@@ -29,29 +29,39 @@ const Home = () => {
       [name]: value
     }));
   };      
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // console.log('name:', name);
-    // console.log('email:', email);
-    // console.log('Password:', password);
-    console.log(state);
-  }; 
+    // print the form output in console
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   // console.log('name:', name);
+  //   // console.log('email:', email);
+  //   // console.log('Password:', password);
+  //   console.log(state);
+  // }; 
+
+
   // const Navigate =useNavigate();
   // const handleClick =() =>{
   //   Navigate(-1);
   //   state:{
   //   }
   // }
-  const navigate = useNavigate();
 
-    const handleNavigation = () => {
-        const propsToPass = {
-            name:"",
-            email:"",
-            password:""
-        };
-        navigate('/about', { state: propsToPass });
-    };
+  // it use for navigation using useLocation and useNavigate
+  const navigate = useNavigate(); 
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setState(true);
+    console.log(state);
+    navigate('/about', {
+      state: {
+        m: state
+      }
+    });
+  };
+
+
   return (
     
       <div className="form">
@@ -88,9 +98,12 @@ const Home = () => {
             autoComplete="off"
             placeholder="Enter your password:-"
             onChange={handleChange}
-            onClick={togglePasswordVisiblity} /> {eye}{""}
+           /> 
+           <i onClick={togglePasswordVisiblity}>{eye}</i>{" "}
+
           <button type="submit" className="submit">Submit</button>
-          <button onClick={handleNavigation}>Go to about page</button>
+
+          {/* <button onClick={handleNavigation}>Go to about page</button> */}
        </form>
        </div>
   )

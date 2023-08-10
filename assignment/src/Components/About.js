@@ -1,17 +1,32 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation,useNavigate } from 'react-router-dom';
 
 const About = () => {
-  const location = useLocation();
-  const passedProps = location.state;
+  
+  const Location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick =() =>{
+    navigate('/')
+  }
 
   return (
     <>
          <div>
-            <h1>Welcome to About Page</h1>
-            <p>{passedProps.name}</p>
-            <p>{passedProps.email}</p>
-            <p>{passedProps.password}</p>
+         {Location.state ==null?'':
+         <h5 >
+         {Location.state.m.name}
+         </h5>}
+         {Location.state ==null?'':
+         <h5 >
+         {Location.state.m.email}
+         </h5>}
+         {Location.state ==null?'':
+         <h5 >
+         {Location.state.m.password}
+         </h5>}
+         <button onClick={()=>handleClick()} className='btn1'>Back-Here!</button>
+
         </div>
     </>
   )
