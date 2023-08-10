@@ -1,50 +1,50 @@
-// let a="manu";
-// let b="kumar";
+// let a="m";
+// let b="k";
 
 // console.log(a.length);
 
 
-// let a="Hello manu hey and bye";
+// let a="Hello m hey and bye";
 // console.log(a.slice(5));
 
-// let a="hello manu hey bye";
-// console.log(a.replace("hey","kumar"));
+// let a="hello m hey bye";
+// console.log(a.replace("hey","k"));
 
-// let a="hello manu hey bye";
-// console.log(a.replaceAll("hey","kumar"));
+// let a="hello m hey bye";
+// console.log(a.replaceAll("hey","k"));
 
-// let a="manu";
+// let a="m";
 // console.log(a.toUpperCase());
 
 
 
-// let a="MANU";
+// let a="M";
 // console.log(a.toLowerCase());
 
 // let fruit="Apple";
 // console.log(fruit.substring(0,2));
 
-// let firstname="Manu";
-// let lastname="kumar";
+// let first="M";
+// let last="k";
 
-// let result=firstname.concat(lastname);
-// console.log(firstname.concat(lastname));
+// let result=first.concat(last);
+// console.log(first.concat(last));
 
 // console.log(result);
 
 
 
-// let a="manu";
+// let a="m";
 // console.log(a.trim());
 
-// let a="manu";
+// let a="m";
 // console.log(a.trimStart());    
 
-// let a="manu kumar pal";
+// let a="m  pal";
 // console.log(a.trimEnd());       
 
-// let a="manu";
-// let b="kumar";
+// let a="m";
+// let b="pal";
 
 // let c=a[0].charAt(4);
 // let d=b[0].charAt(5);
@@ -74,8 +74,8 @@
 // console.log(a.includes("hello"));
 
 
-// let a="hello manu hey how are you ";
-// let b=a.indexOf('heey');
+// let a="hello m hey how are you ";
+// let b=a.indexOf('hey');
 // console.log(b);
 
 // let a="hello";
@@ -87,7 +87,7 @@
 // let a="hello  hey hello";
 // console.log(a.lastIndexOf("hello",6));
 
-// let a="Manu";
+// let a="ha";
 // let b=`hello ${a}`;
 // console.log(b);
 
