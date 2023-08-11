@@ -7,7 +7,7 @@ import Home from './Components/Home';
 import Contact from './Components/Contact';
 import Main from './Components/Main';
 import Services from './Components/Services';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 import FetchData from './Components/FetchData';
 
 
@@ -26,7 +26,7 @@ function App() {
         <Route exact path='/fetchdata' element={<FetchData />}></Route>
         
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
        </BrowserRouter>
       
      </>

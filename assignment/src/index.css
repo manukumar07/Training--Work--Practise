@@ -23,3 +23,13 @@ code {
   margin-top:10rem;
   /* background-color:grey; */
 }
+.container{
+  margin-left:100px;
+  margin-top:3rem;
+  /* border:2px solid red; */
+}
+table{
+  margin-left:400px;
+  margin-top:2rem;
+  padding:5px;
+}
