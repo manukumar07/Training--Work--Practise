@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import { useNavigate} from "react-router-dom";
+// import { useParams } from "react-router-dom";
+import axios from 'axios';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 const eye = <FontAwesomeIcon icon={faEye} />;
 
 const Home = () => {
+
   // const [name, setName] = useState('');
   // const [email, setEmail] = useState('');
   // const [password, setPassword] = useState('');
@@ -17,19 +20,18 @@ const Home = () => {
     password: ""
   });
   const [passwordShown, setPasswordShown] = useState(false);
-
   const togglePasswordVisiblity = () => {
-    setPasswordShown(passwordShown ? false : true);
+  setPasswordShown(passwordShown ? false : true);
   };
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setState((prevProps) => ({
       ...prevProps,
       [name]: value
     }));
-  };      
-    // print the form output in console
+  };   
+
+  // print the form output in console
 
   // const handleSubmit = (event) => {
   //   event.preventDefault();
@@ -48,8 +50,8 @@ const Home = () => {
   // }
 
   // it use for navigation using useLocation and useNavigate
-  const navigate = useNavigate(); 
 
+  const navigate = useNavigate(); 
   const handleSubmit = (event) => {
     event.preventDefault();
     setState(true);
@@ -61,9 +63,24 @@ const Home = () => {
     });
   };
 
+//   const [data, setData] = useState([]);
 
+//   // how to use get data using api
+//   useEffect(()=>{
+
+//     axios.get('https://jsonplaceholder.typicode.com/users')
+//     .then(response => {
+//       // Handle the response data
+//       // setData(response.data);
+//       console.log(data);
+
+//     })
+//     .catch(error => {
+//       // Handle error if request fails
+//       console.error('Error fetching data:', error);
+//     });
+// }, []); 
   return (
-    
       <div className="form">
         <h2>Form</h2>
         <form onSubmit={handleSubmit}>
@@ -104,11 +121,11 @@ const Home = () => {
           <button type="submit" className="submit">Submit</button>
 
           {/* <button onClick={handleNavigation}>Go to about page</button> */}
+
        </form>
        </div>
   )
 }
-
 export default Home;
 
 

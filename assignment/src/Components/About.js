@@ -9,6 +9,7 @@ const About = () => {
   const handleClick =() =>{
     navigate('/')
   }
+  
 
   return (
     <>
@@ -25,6 +26,7 @@ const About = () => {
          <h5 >
          {Location.state.m.password}
          </h5>}
+         
          <button onClick={()=>handleClick()} className='btn1'>Back-Here!</button>
 
         </div>
@@ -32,3 +34,6 @@ const About = () => {
   )
 };
 export default About;
+
+
+
