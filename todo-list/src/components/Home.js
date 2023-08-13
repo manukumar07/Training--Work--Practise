@@ -3,7 +3,12 @@ import React from 'react'
 const Home = () => {
   return (
     <>
-        <h1>Welcome</h1>
+        <div className='main-container'>
+                <h2>Add Item here!</h2>
+            <div> 
+                    <input type='text' placeholder='Add Item'></input>
+            </div>
+        </div>
     </>
   )
 }
