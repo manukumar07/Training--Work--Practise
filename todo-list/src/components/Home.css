@@ -1,0 +1,96 @@
+.todo-list {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow:9px 9px 5px 0px rgba(240,204,240,1);
+  margin-top:3rem;
+  height:500px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+ h1{
+    text-align:center;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size:20px;
+  font-weight:600;
+  border:2px solid black;
+
+}
+
+.input-container button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width:100px;
+  height:auto;
+  margin-left:5px;
+  font-size:15px;
+  font-weight:500;
+  border-radius:5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  /* display: flex;
+  justify-content: space-around; */
+  align-items: center;
+  padding: 8px 0;
+  /* padding-left:200px; */
+}
+
+li button {
+  background-color: #ff4136;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+.edit-icon {
+  margin-left: 10px;
+  color: #007bff;
+  cursor: pointer;
+  
+}
+.todo-icons {
+  display: flex;
+  align-items: center;
+}
+
+.edit-icon,
+.delete-icon {
+  color: #007bff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.edit input{
+  font-weight:600;
+  font-size:20px;
+}
+
