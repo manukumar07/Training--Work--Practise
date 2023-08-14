@@ -24,7 +24,11 @@ const Home = () => {
   const addTodo = () => {
 
     if (newTodo.trim() !== '') {
-      setTodos([...todos, { id: Date.now(), text: newTodo }]);
+      setTodos([...todos,
+      { 
+      id: Date.now(), 
+      text: newTodo
+     }]);
       setNewTodo('');
     }
   };
@@ -41,9 +45,7 @@ const Home = () => {
   };
 
   const saveEdit = (id) => {
-    const updatedTodos = todos.map(todo =>
-      todo.id === id ? { ...todo, text: editTodoText } : todo
-    );
+    const updatedTodos = todos.map(todo => todo.id === id ? { ...todo, text: editTodoText } : todo );
     setTodos(updatedTodos);
     setEditTodo(null);
     setEditTodoText('');
@@ -67,10 +69,8 @@ const Home = () => {
             ) : (
               <>
                 {todo.text}
-                <FaPencilAlt
-                className="edit-icon" onClick={() => startEdit(todo.id, todo.text)}/>
-                <FaTrash
-                className="delete-icon" onClick={() => deleteTodo(todo.id)} />
+                <FaPencilAlt className="edit-icon" onClick={() => startEdit(todo.id, todo.text)}/>
+                <FaTrash className="delete-icon" onClick={() => deleteTodo(todo.id)} />
               </>
             )}
           </li>
