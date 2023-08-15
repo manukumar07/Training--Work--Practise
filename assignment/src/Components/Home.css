@@ -3,6 +3,7 @@
     font-weight:700;
     /* margin-right:250px; */
     padding-top:5px;
+    /* margin-right:250px; */
 } 
 
 .submit
@@ -72,3 +73,8 @@
       cursor: pointer;
     }
     
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+  

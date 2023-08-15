@@ -83,7 +83,7 @@ const Home = () => {
   return (
       <div className="form">
         <h2>Form</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="formm">
           <label className="lb">Enter Your Name:-</label>
           <input
             type="text"
