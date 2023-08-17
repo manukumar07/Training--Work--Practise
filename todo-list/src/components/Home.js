@@ -39,11 +39,13 @@ const Home = () => {
     setTodos(updatedTodos);
   };
 
+  
   const startEdit = (id, text) => {
     setEditTodo(id);
     setEditTodoText(text);
-  };
+};
 
+// save edit 
   const saveEdit = (id) => {
     const updatedTodos = todos.map(todo => todo.id === id ? { ...todo, text: editTodoText } : todo );
     setTodos(updatedTodos);
@@ -79,7 +81,6 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;
 
 
