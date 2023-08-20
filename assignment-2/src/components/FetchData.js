@@ -5,12 +5,11 @@ import {useState} from "react-router-dom";
 
 const FetchData = () => {
     const [data,setData]=useState([]);
-    // fetch("https://dummyjson.com/products/")
-    .then((response)=>response.json())
 
-    .then ((info)=>{
-        setData(info);
-    });
+    fetch('')
+    .then((respone) => respone.json())
+    .then (())
+
   return (
     <>
         <h2>Fetch data using Fetch Method....</h2>
@@ -20,4 +19,4 @@ const FetchData = () => {
   )
 }
 
-export default FetchData
+export default FetchData;

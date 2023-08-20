@@ -39,7 +39,6 @@ const Home = () => {
     setTodos(updatedTodos);
   };
 
-  
   const startEdit = (id, text) => {
     setEditTodo(id);
     setEditTodoText(text);
@@ -74,6 +73,7 @@ const Home = () => {
                 <FaPencilAlt className="edit-icon" onClick={() => startEdit(todo.id, todo.text)}/>
                 <FaTrash className="delete-icon" onClick={() => deleteTodo(todo.id)} />
               </>
+              // TO-DO LIST PERFORM ON CRUD OPERATION USING REACT HOOKS AND 
             )}
           </li>
         ))}

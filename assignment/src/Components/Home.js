@@ -19,6 +19,7 @@ const Home = () => {
     email: "",
     password: ""
   });
+
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePasswordVisiblity = () => {
   setPasswordShown(passwordShown ? false : true);
@@ -30,7 +31,6 @@ const Home = () => {
       [name]: value
     }));
   };   
-
   // print the form output in console
 
   // const handleSubmit = (event) => {
